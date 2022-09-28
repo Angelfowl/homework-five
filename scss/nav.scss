@@ -1,0 +1,62 @@
+nav {
+    width: 980px;
+    height: 94px;
+    // background-color: darkmagenta;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: 40%;
+        height: 42px;
+        // background-color: blueviolet;
+    }
+
+    .links {
+        width: 60%;
+        height: 40px;
+        // background-color: hotpink;
+        color: #79ADDC;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            font-family: Sora;
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    nav {
+        display: block;
+
+        .logo {
+            margin-left: 250px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+
+        .logo {
+            margin-left: 150px;
+        }
+
+        .links{
+            max-width: 450px;
+            flex-wrap: wrap;
+        }
+
+    }
+}
